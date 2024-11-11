@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+
+body {
+  font-family: "poppins";
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.pie_chart_content {
+  background-image: url(http://cdn.lowgif.com/full/58c35239081f24b4-spotlight-blue-background-find-make-share-gfycat-gifs.gif);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+ box-shadow: 0px 30px 100px rgba(20, 7, 94, 0.781) inset,
+ -30px 0px 100px rgba(20, 7, 94, 0.781) inset;
+}
+
+.overlay {
+  height: 100%;
+  /* height: 1100px;*/
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.pie_chart_content .container {
+  /* background-color: white; */
+  border-radius: 40px;
+  padding: 15px;
+}
+
+/* Glassy Effect */
+.container {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+ 
+  background-color: rgba(255, 255, 255, 0.747);
+  backdrop-filter: blur(5px);
+}
+
+.main_box h1 {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+
+.main_box {
+  background-color: rgba(0, 17, 116, 0.445);
+  /* background-color: rgba(255, 255, 255, 0.712); */
+  color: antiquewhite;
+  height: 100%;
+}
+
+.count_box {
+  box-shadow: inset 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(20, 7, 94, 0.658);
+
+  backdrop-filter: blur(5px);
+  height: 100%;
+
+  padding: 15px;
+}
+
+.total-input {
+  background-color: #3546b0;
+  border: none;
+  color: white;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: #3546b0;
+  opacity: 1;
+}
+
+.coronavirus-input {
+  background-color: #d5d880;
+  border: none;
+  color: white;
+}
+
+.deaths-input {
+  background-color: #dd3b79;
+  border: none;
+  color: white;
+}
+
+.recovered-input {
+  background-color: #ff766b;
+  border: none;
+  color: white;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.productivity-input{
+  background-color: #2adece;
+  border: none;
+  color: white;
+}
+.job-input {
+  background-color: #dd3b79;
+  border: none;
+  color: white;
+}
+
+.miscellaneous-input {
+  background-color: #ff766b;
+  border: none;
+  color: white;
+}

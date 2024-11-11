@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<!-- Navigation Bar Start –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="Files_CSS/navigationStyle.css" rel="stylesheet" type="text/css">
+
+	<script src="CodesJavaScript/upper_Nav.js"></script>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script>
+		window.onload = function () {
+			var dps = []; // dataPoints - Array
+			var chart = new CanvasJS.Chart("chartContainer", {
+				title: {
+					text: "Live Line Chart"
+				},
+				axisX: {
+					title: "Days"
+				},
+				axisY: {
+					title: "No. of People"
+				},
+				data: [{
+					type: "line",
+					dataPoints: dps
+				}]
+			});
+
+			var a = 1;
+			var b = 7640645; // Y axis differences
+			var updateInterval = 1500; // Time to update
+			var dataLength = 10;
+			var updateChart = function (count) {
+
+				count = count || 3;
+
+				for (var i = 0; i < count; i++) {
+					b = b + Math.round(5 + Math.random() * 10);
+
+					dps.push({
+						//(method) Array<any>.push(...items: any[]): number
+						x: a,
+						y: b
+					});
+					a++;
+				}
+
+				if (dps.length > dataLength) {
+					dps.shift();
+				}
+
+				chart.render();
+			};
+
+			updateChart(dataLength);
+			setInterval(function () { updateChart() }, updateInterval);
+
+		}
+	</script>
+
+
+
+</head>
+
+<body>
+	<div id="navbar">
+        <a href="homepage.html">Home</a>
+       
+        <a href="userInp.html">User Input</a>
+        <a href="realTime.html" class="active">Real Time</a>
+        <a href="InfoCovid19.html">InfoCovid-19</a>
+        
+        <div style="
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 15px;
+			text-decoration: none;
+			font-size: 18px;
+			vertical-align: top;" class="typewrite" data-period="2000"
+            data-type='[ "Welcome to LiveGraphs.com", "View all Live Graphs Here" ]'>
+            <span class="wrap"></span>
+        </div>
+    </div>
+    
+
+
+    <!--<div class="container3dC">
+        <img src="https://i.pinimg.com/originals/c9/91/72/c99172c17b83d3c620b997858351b2a5.gif"
+            style="box-shadow: 12px 20px 80px blue; border: 2px solid rgb(29, 0, 133);" >
+            <div style="color: black; position: absolute; padding: 12px;">LiveGraphs.com</div>
+    </div>-->
+
+	<div class="p-4">.</div>
+
+	<div class="jumbotron" style="
+    background-image: url(https://64.media.tumblr.com/68eba6428b1e95bd4e349a16c717c880/tumblr_p0168gtRdI1runoqyo3_540.gifv);
+    /* https://media3.giphy.com/media/sRFEa8lbeC7zbcIZZR/giphy.gif */
+	color: white;
+    background-color: rgba(46, 2, 4, 0.658);
+	box-shadow: inset 0px 180px 200px rgba(253, 68, 68, 0.945);
+	">
+		<h2><b>Population increses</b><br>
+			&nbsp;
+			&nbsp;
+			in this Year from day 1 of 2021</h2>
+	</div>
+
+	<div class="container-fluid col-md-auto">
+		<!-- style="text-align: center; padding: 12px;" -->
+		<div id="chartContainer" style="height: 300px; width: 100%; font-family: monospace; font-size: xx-large;"></div>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	</div>
+
+</body>
+
+
+<!-- Footer -->
+<footer class="card-footer text-center text-lg-start text-white" style="background-color: black; box-shadow: 1px 12px 30px rgba(0, 5, 80, 0.897) inset">
+    <!-- Grid container -->
+    <div class="container p-2">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <div style="
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 15px;
+			font-size: 18px;" class="typewrite" data-period="2000"
+            data-type='[ "LiveGraphs.com", "Website created by"," Prateek and Harmanpreet" ]'>
+            <span class="wrap"></span>
+        </div>
+  
+          <p class="text-white">
+           This website contain real time and user input Graphs.
+           In real time we have inserted world population, covid-19, Bitcoin and Stocks of Air Canada.
+            User input graphs have a pie chart and surface area graphs.
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">User Input</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="userInputPie.html" class="text-white-50">Covid Pie Chart</a>
+            </li>
+            <li>
+              <a href="UI_DailyProd.html" class="text-white-50">Daily Productivity</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Real Time</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="RT_worldPop.html" class="text-white-50">World Population</a>
+            </li>
+            <li>
+              <a href="new1.html" class="text-white-50">Covid-19</a>
+            </li>
+            </li>
+            <li>
+              <a href="RT_BitcVal.html" class="text-white-50">Bitcoin</a>
+            </li>
+            </li>
+            <li>
+              <a href="stocks.html" class="text-white-50">Air Canada Stocks</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="
+    background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);
+    /* https://media3.giphy.com/media/sRFEa8lbeC7zbcIZZR/giphy.gif */
+
+    background-color: rgba(25, 2, 46, 0.658);">
+      © 2020 Copyright | Designed and created by - Prateek & Harmanpreet
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</html>

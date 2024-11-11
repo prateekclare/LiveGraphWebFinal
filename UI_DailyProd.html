@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Pie Chart</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="Files_CSS/userInPie2.css">
+  <!-- Navigation Bar Start –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="Files_CSS/navigationStyle.css" rel="stylesheet" type="text/css">
+
+  <script src="CodesJavaScript/upper_Nav.js"></script>
+
+  <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="https://media3.giphy.com/media/3o85xGmIbdnDpUm9Vu/giphy.gif">
+  <!-- –––––––––––––––––––– –––––––––––––––––––––– -->
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <a href="homepage.html">Home</a>
+
+    <a href="userInp.html" class="active">User Input</a>
+    <a href="realTime.html">Real Time</a>
+    <a href="InfoCovid19.html">InfoCovid-19</a>
+
+    <div style="
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      vertical-align: top;" class="typewrite" data-period="2000"
+      data-type='[ "Welcome to LiveGraphs.com", "View all Live Graphs Here" ]'>
+      <span class="wrap"></span>
+    </div>
+  </div>
+
+
+  </div>
+
+  <section class="pie_chart_content">
+
+    <div class="overlay">
+
+      <div class="container" id="innerS">
+        <div class="row">
+
+
+          <div class="col-md-6">
+
+            <div id="innerS" class="main_box container">
+
+              <h1>Productivity Pie Chart</h1>
+
+              <canvas id="myChart"></canvas>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+
+            <div class="count_box">
+              <div class="form-group">
+                <label for="productivity-input">
+                  Fill following details to get Pie Chart</label>
+                <!-- <input type="text" value="614939" readonly class="total-input form-control" /> -->
+              </div>
+
+              <div class="form-group">
+                <label for="productivity-input">Study Hours</label>
+                <input id="innerS" type="text" name="study-input" class="productivity-input form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="job-input">Job Hours</label>
+                <input id="innerS" type="text" name="job-input" class="job-input form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="miscellaneous-input">Miscellaneous Activity</label>
+                <input id="innerS" type="text" name="miscellaneous-input" class="miscellaneous-input form-control" />
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script src="CodesJavaScript/userInputPie2.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+</body>
+<!-- Footer -->
+<footer class="card-footer text-center text-lg-start text-white"
+  style="background-color: black; box-shadow: 1px 12px 30px rgba(0, 5, 80, 0.897) inset">
+  <!-- Grid container -->
+  <div class="p-2">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <div style="
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 15px;
+			font-size: 18px;" class="typewrite" data-period="2000"
+          data-type='[ "LiveGraphs.com", "Website created by"," Prateek and Harmanpreet" ]'>
+          <span class="wrap"></span>
+        </div>
+
+        <p class="text-white">
+          This website contain real time and user input Graphs.
+          In real time we have inserted world population, covid-19, Bitcoin and Stocks of Air Canada.
+          User input graphs have a pie chart and surface area graphs.
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">User Input</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="userInputPie.html" class="text-white-50">Covid Pie Chart</a>
+          </li>
+          <li>
+            <a href="UI_DailyProd.html" class="text-white-50">Daily Productivity</a>
+          </li>
+
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Real Time</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="RT_worldPop.html" class="text-white-50">World Population</a>
+          </li>
+          <li>
+            <a href="new1.html" class="text-white-50">Covid-19</a>
+          </li>
+          </li>
+          <li>
+            <a href="RT_BitcVal.html" class="text-white-50">Bitcoin</a>
+          </li>
+          </li>
+          <li>
+            <a href="stocks.html" class="text-white-50">Air Canada Stocks</a>
+          </li>
+
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="
+    background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);
+    /* https://media3.giphy.com/media/sRFEa8lbeC7zbcIZZR/giphy.gif */
+
+    background-color: rgba(25, 2, 46, 0.658);">
+    © 2020 Copyright | Designed and created by - Prateek & Harmanpreet
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</html>

@@ -1,0 +1,83 @@
+.fullRC{
+			margin: 0;
+			padding: 0;
+			font-family: 'Poppins',sans-serif;
+		}
+
+		.bodyRC{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* background: #16384c; */
+		}
+
+		.containerRC{
+			position: relative;
+			width: 1100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			flex-wrap: wrap;
+			padding: 30px;
+		}
+
+		.containerRC .cardRC{
+			position: relative;
+			max-width: 300px;
+			/*  */
+			height: 215px;
+
+			background: #fff;
+			margin: 30px 10px;
+			padding: 20px 15px;
+			display:  flex;
+			flex-direction: column;
+			box-shadow: 0 5px 20px rgb(0,0,0,0.5);
+			transition: 0.3s ease-in-out;
+		}
+
+		.containerRC .cardRC:hover
+		{
+			height: 480px;
+		}
+
+
+		.containerRC .cardRC .imgBxRC{
+			position: relative;
+			width: 260px;
+			height: 260px;
+
+			top: -50px;
+			left: 20px;
+			left: 20px;
+			z-index: 1;
+			box-shadow: 0 5px 20px rgb(0,0,0,0.2);
+		}
+
+		.containerRC .cardRC  .contentRC{
+			position: relative;
+			margin-top: -140px;
+			padding: 10px 15px;
+			text-align: center;
+			color: #111;
+			visibility: hidden;
+			opacity: 0;
+			transition: 0.3s ease-in-out;
+		}
+
+		.containerRC .cardRC:hover  .contentRC
+		{
+			visibility: visible;
+			opacity: 1;
+			
+
+			margin-top: -40px;
+			transition-delay: 0.3s;
+		}
+
+
+		.containerRC .cardRC .imgBxRC img{
+			max-width: 100%;
+			border-radius: 4px;
+		}
